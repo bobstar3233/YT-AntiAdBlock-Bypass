@@ -146,13 +146,7 @@
         });
     }
 
-    function switchTabTitle() {
-        var titles = ["Enjoying YouTube with no Ads", "by github.com/Yaw-Dev"];
-        if (animatedTitle) {
-            window.document.title = titles[titleIndex];
-            titleIndex = (titleIndex + 1) % titles.length;
-        }
-    }
+
 
     function removeAds() {
         const currentURL = window.location.href;
@@ -185,5 +179,4 @@
     }
     createSettingsMenu();
     setInterval(removeAds, searchInterval);
-    setInterval(switchTabTitle, 1000);
 })();
